@@ -8,11 +8,26 @@
     font-weight: 700;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    border: 0;
+    cursor: pointer;
     box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: lighten($accent-color, 3%);
 }
 
 .button--centered {
     margin: 3em auto;
+}
+
+.button--right {
+    float: right;
+}
+
+.button--small {
+    width: 150px;
+    padding: 10px 40px;
 }
 
 @media (min-width: $desktop-min-width) {

@@ -35,20 +35,6 @@
     color: $color-dark-gray;
 }
 
-.twoCellsGrid--darkBackground {
-    background-color: $main-color-dark;
-    color: $color-light-gray;
-}
-
-.twoCellsGrid__logo--whiteText svg {
-    width: 350px;
-}
-
-.twoCellsGrid__logo--whiteText path[mask="url(#b)"]{
-    fill: white;
-}
-
-
 .twoCellsGrid__cell--accentBackground {
     background: url("img/bg-intro-mobile.svg");
     background-position: right top;

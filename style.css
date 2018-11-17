@@ -88,11 +88,26 @@ body {
   font-weight: 700;
   text-align: center;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border: 0;
+  cursor: pointer;
   box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #06e5a6;
 }
 
 .button--centered {
   margin: 3em auto;
+}
+
+.button--right {
+  float: right;
+}
+
+.button--small {
+  width: 150px;
+  padding: 10px 40px;
 }
 
 @media (min-width: 768px) {
@@ -139,19 +154,6 @@ body {
   line-height: 1em;
   margin-bottom: 1em;
   color: #2b2b2b;
-}
-
-.twoCellsGrid--darkBackground {
-  background-color: #070439;
-  color: #fafafa;
-}
-
-.twoCellsGrid__logo--whiteText svg {
-  width: 350px;
-}
-
-.twoCellsGrid__logo--whiteText path[mask="url(#b)"] {
-  fill: white;
 }
 
 .twoCellsGrid__cell--accentBackground {
@@ -396,6 +398,70 @@ body {
   .simpleBlock__header {
     font-size: 32px;
   }
+}
+.footerGrid {
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #070439;
+  color: #fafafa;
+  padding-bottom: 10%;
+}
+
+.footerGrid__cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8%;
+  height: auto;
+  min-height: 0;
+  color: inherit;
+  text-align: left;
+}
+
+.footerGrid__logo--whiteText {
+  margin: 2rem 0;
+}
+
+.footerGrid__emailInput {
+  width: 220px;
+  padding: 10px 10px;
+  margin-right: 8px;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border: 0;
+  box-sizing: border-box;
+}
+
+.footerGrid__logo--whiteText path[mask="url(#b)"] {
+  fill: white;
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 38% 62%;
+    background-color: #070439;
+    color: #fafafa;
+    padding-bottom: 10%;
+  }
+}
+.contactGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.contactGrid__cell {
+  color: #bbb8fa;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
