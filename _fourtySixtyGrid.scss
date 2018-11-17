@@ -1,0 +1,45 @@
+.fourtySixtyGrid {
+    display: grid;
+    padding: 30% 8%;
+    align-items: center;
+    z-index: 30;
+    text-align: center;
+}
+
+.fourtySixtyGrid__cell {
+    margin: auto;
+    width: 70%;
+}
+
+.fourtySixtyGrid__cell--text {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 4em;
+}
+
+.fourtySixtyGrid__header {
+    color: $color-dark-gray;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+@media (min-width: $desktop-min-width) {
+    .fourtySixtyGrid  {
+        grid-template-columns: 40% 60%;
+        text-align: left;
+        padding: 4% 8%;
+    }
+
+    .fourtySixtyGrid__cell {
+        width: 100%;
+    }
+
+    .fourtySixtyGrid__cell--text {
+        padding: 40px;
+        padding-left: 0;
+    }
+
+    .fourtySixtyGrid__header {
+        font-size: 30px;
+    }
+}

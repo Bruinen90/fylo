@@ -1,0 +1,31 @@
+$desktop-min-width: 768px;
+$main-color-light: hsl(243, 86%, 85%);
+$main-color-dark: hsl(243, 87%, 12%);
+$accent-color: hsl(163, 95%, 43%);
+$color-light-gray: hsl(106, 0%, 98%);
+$color-gray: hsl(0, 0%, 50%);
+$color-dark-gray: hsl(0, 0%, 17%);
+$font-basic: 'Open Sans', sans-serif;
+$font-headers: 'Raleway', sans-serif;
+$main-padding: 100px;
+
+
+* {
+    font-family: $font-basic;
+    font-size: 14px;
+    color: $color-gray;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+body {
+    background-color: #444;
+}
+
+@media (min-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+}

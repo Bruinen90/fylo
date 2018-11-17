@@ -1,0 +1,64 @@
+.sixCellsGrid {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    padding: 4% 8%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.sixCellsGrid::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-light-gray;
+    z-index: 0;
+    border-radius: 70px;
+    transform: rotate(25deg) skewX(3deg) scaleX(2);
+}
+
+.sixCellsGrid__cell {
+    text-align: center;
+    padding: 1em 0;
+    margin: 2em;
+    box-sizing: border-box;
+}
+
+.sixCellsGrid__header {
+    font-size: 24px;
+    color: $color-dark-gray;
+    margin-bottom: 1.25em;
+}
+
+.sixCellsGrid__iconDecription {
+    color: $color-dark-gray;
+    margin: 2em auto;
+}
+
+
+@media (min-width: $desktop-min-width) {
+    .sixCellsGrid {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .sixCellsGrid::before {
+        transform: rotate(15deg) skew(-30deg);
+    }
+
+    .sixCellsGrid__cell--top {
+        grid-column: 1/4;
+    }
+
+    .sixCellsGrid__header {
+        font-size: 32px;
+    }
+
+    .sixCellsGrid_textField {
+        width: 75%;
+        margin: auto;
+    }
+}

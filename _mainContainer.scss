@@ -1,0 +1,14 @@
+.mainContainer {
+    width: 100vw;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+@media (min-width: $desktop-min-width) {
+    .mainContainer {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        box-shadow: 0 0 40px rgba(0,0,0,.6);
+    }
+}

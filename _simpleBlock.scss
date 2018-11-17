@@ -1,0 +1,21 @@
+.simpleBlock {
+    padding: 8%;
+    text-align: center;
+}
+
+.simpleBlock__header {
+    font-size: 20px;
+    color: $color-dark-gray;
+    margin-bottom: 1em;
+}
+
+@media (min-width: $desktop-min-width) {
+    .simpleBlock {
+        width: 70%;
+        margin: auto;
+    }
+
+    .simpleBlock__header {
+        font-size: 32px;
+    }
+}
