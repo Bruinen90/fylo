@@ -63,6 +63,10 @@
     background-color: lighten($accent-color, 3%);
 }
 
+.navbar__item--button::before {
+    display: none;
+}
+
 @media (min-width: $desktop-min-width) {
     .navbar__container {
         padding: 60px $main-padding;

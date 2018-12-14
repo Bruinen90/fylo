@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     background-color: $color-light-gray;
-    z-index: 0;
+    z-index: -10;
     border-radius: 70px;
     transform: rotate(25deg) skewX(3deg) scaleX(2);
 }

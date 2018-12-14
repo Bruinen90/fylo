@@ -74,8 +74,12 @@
 
             <section class="fourtySixtyGrid">
                 <div class="fourtySixtyGrid__cell fourtySixtyGrid__cell--text">
-                    <h2 class="fourtySixtyGrid__header">Connect with the apps you use everyday</h2>
-                    Fylo seamlessly integrates with hundreds of apps, meaning you can access and work on your files from the apps you already know and love.
+                    <h2 class="fourtySixtyGrid__header">
+                        Connect with the apps you use everyday
+                    </h2>
+                    Fylo seamlessly integrates with hundreds of apps,
+                    meaning you can access and work on your files from the apps
+                    you already know and love.
                 </div>
                 <div class="fourtySixtyGrid__cell">
 
@@ -96,7 +100,7 @@
                         <div class="tableSixCells__cell tableSixCells__cell--up">
                             <div class="tableSixCells__imageContainer">
                                 <img
-                                    src="img/logo-GSuite.png"
+                                    src="img/logo-gsuite.png"
                                     alt="Logo "
                                     class="tableSixCells__logoImage"
                                 />
@@ -266,6 +270,7 @@
         </div>
 
         <script>
+        const test = document.querySelectorAll('img.svg');
             document.querySelectorAll('img.svg').forEach(function(img){
                 let imgClass = img.className;
                 let imgURL = img.src;
@@ -286,9 +291,7 @@
                         svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
                     }
                     img.parentNode.replaceChild(svg, img);
-
                 });
-
             });
         </script>
     </body>

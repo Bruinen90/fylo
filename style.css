@@ -96,6 +96,10 @@ body {
   background-color: #06e5a6;
 }
 
+.navbar__item--button::before {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .navbar__container {
     padding: 60px 100px;
@@ -243,7 +247,7 @@ body {
   top: 0;
   left: 0;
   background-color: #fafafa;
-  z-index: 0;
+  z-index: -10;
   border-radius: 70px;
   transform: rotate(25deg) skewX(3deg) scaleX(2);
 }
@@ -290,10 +294,11 @@ body {
   }
 }
 .fourtySixtyGrid {
+  position: relative;
   display: grid;
   padding: 30% 8%;
   align-items: center;
-  z-index: 30;
+  z-index: 3;
   text-align: center;
 }
 
